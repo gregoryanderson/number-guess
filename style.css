@@ -23,6 +23,14 @@ header {
   padding:25px;
 }
 
+header h2:before,
+header h2:after {
+    content: '';
+    border-top: 2px solid;
+    margin: 0 20px 0 0;
+    flex: 1 0 20px;
+}
+
 .top__header--edition {
   font-size:1.5em;
   color:#ffffff;
@@ -41,12 +49,13 @@ header {
   font-weight: 300;
 }
 
+
 /****************** Main *********************/
 main {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  height:95%;
+  height:775px;
   width:50%;
   background-color:#f7f7f7;
   padding:20px;
@@ -138,6 +147,10 @@ main {
   padding:10px;
 }
 
+.player__container--ch h3{
+  width:100%;
+}
+
 .player__div--guess {
   width:100%;
 }
@@ -215,6 +228,7 @@ main {
 
 .latest-score__container h3 {
   margin: 0;
+  width: 100%;
 }
 
 .latest-score__container article {
@@ -357,11 +371,27 @@ aside {
   aside {
     width: 100%;
   }
+
+  .top__header {
+    font-size: 4em;
+  }
+
+  .top__header--edition {
+    font-size: 1.3em;
+  }
 }
 
 @media screen and (max-width: 600px) {
   main {
-    height: 1500px;
+    height: 1200px;
+  }
+
+  .top__header {
+    font-size: 2.2em;
+  }
+
+  .top__header--edition {
+    font-size: .7em;
   }
 
   .range__div--parent {
@@ -385,9 +415,26 @@ aside {
     width:100%;
   }
 
+  .range__div--first {
+    margin-bottom: 20px;
+  }
+
+  #range__input--error {
+    margin-top: 15px;
+    width:100%;
+  }
+
+  .container__headers{
+    width:100%;
+  }
+
   .player__container--ch {
-    height: 40%;
+    height: 45%;
     display: block;
+  }
+
+  .player__header--range {
+    font-size: .9em;
   }
 
   .player__form--ch {
@@ -397,6 +444,7 @@ aside {
   .player__input,
   .player__input--guess {
     width: 100%;
+    margin-bottom: 15px;
   }
 
   .player__wrapper--btns {
