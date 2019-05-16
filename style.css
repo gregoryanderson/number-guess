@@ -13,26 +13,30 @@ body {
 
 /****************** Header ****************/
 header {
-  width:100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
   align-items: center;
   background-color:#404041;
+  display: flex;
+  flex-direction: column;
   height:20%;
+  justify-content: center;
   padding:25px;
+  width:100%;
+}
+
+.color {
+    background-color: #ccc;
 }
 
 .top__header--edition {
-  font-size:1.5em;
   color:#ffffff;
+  font-size:1.5em;
   font-weight:300;
   margin-bottom:60px;
 }
 
 .top__header {
-  font-size:5em;
   color:#dd1972;
+  font-size:5em;
   font-weight: 700;
   height:20px;
 }
@@ -41,70 +45,77 @@ header {
   font-weight: 300;
 }
 
+
 /****************** Main *********************/
 main {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  height:90%;
-  width:50%;
   background-color:#f7f7f7;
+  display: flex;
+  flex-direction: column;
+  height:775px;
+  justify-content: space-between;
   padding:20px;
+  width:50%;
 
 }
 
 .container__headers {
-  height:20px;
-  width:30%;
   color:#6e6e6e;
   font-size:1.2em;
-  display:inline;
+  height:20px;
+  margin-bottom: 5px;
+  margin-top: 0;
+  width:30%;
 }
 
 .range__container--set {
-  height:17%;
-  width:100%;
   background-color:#ffffff;
   border: #d0d0d0 2px solid;
   color:#6e6e6e;
+  height:21%;
   padding:10px;
+  width:100%;
 }
 
 .range__header {
   width:30%;
 }
 
-.range__wrapper {
+.range__div--parent {
+  display:flex;
+  flex:1 1; 
   height:40px;
   width:100%;
-  display:flex;
-  flex:1 1 
+}
+.range__div--first,
+.range__div--second {
+  width:35%;
 }
 
 .range__label { 
-  font-size:1em;
-  height:20px;
   background-color:#ffffff;
   color:#6e6e6e;
+  display: block;
+  font-size:1em;
+  height:20px;
   width:100px;
-  display:inline;
 }
 
 .range__input {
   height:35px;
-  width:40%;
-  display:block;
+  width:80%
 }
 
 .range__btn--update{
-  background-color:#ffffff;
-  height:30px;
-  width:120px;
+  background-color:#6e6e6e;
   border-radius:25px;
   color:#ffffff;
-  background-color:#6e6e6e;
   font-weight:700;
+  height:30px;
+  margin-top:20px;
+  width:120px;
 }
+
+
 
 .player__wrapper {
   display:block;
@@ -114,101 +125,115 @@ main {
 /*** ****/
 
 .player__wrapper--top {
-  height:20%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between
+  height:20%;
+  justify-content: space-between;
 }
 
 .player__container--ch {
+  background-color:#ffffff;
+  border: #d0d0d0 2px solid;
   display: flex;
   flex-direction: column;
+  height:48%;
   justify-content: space-between;
-  border: #d0d0d0 2px solid;
-  height:51%;
-  width:100%;
-  background-color:#ffffff;
   padding:10px;
+  width:100%;
+}
+
+.player__container--ch h3{
+  width:100%;
+}
+
+.player__div--guess {
+  width:100%;
+}
+
+.player__div--name {
+  width:100%;
 }
 
 .player__header--range {
-  width: 80%;
-  font-size: 1.2em;
   color: #6e6e6e;
+  font-size: 1.2em;
   font-weight: 300;
+  margin:0;
+  width: 80%;
 }
 
 .player__form--ch {
   display:flex;
-  width:100%;
   height:10%;
+  width:100%;
 }
 
 .player__span--range {
-  text-decoration: underline;
   font-weight:700;
+  text-decoration: underline;
 }
 
 .player__label {
-  height:20px;
   color: #6e6e6e;
+  display: block;
+  height:20px;
 }
 
 .player__input {
   height:35px;
-  width:100%;
+  width:90%;
 }
 
 .player__input--guess { 
-  height:35px;
-  width:70%;
   display: block;
   flex:1;
+  height:35px;
+  width:70%;
 }
 
 .player__wrapper--btns {
-  display:flex;
-  justify-content: space-between;
   align-items: flex-end;
+  display:flex;
   height:20%;
+  justify-content: space-between;
 }
 
 .btn {
-  display:flex;
-  flex-wrap:wrap;
-  min-width: 30%;
-  justify-content:center;
-  height:33px;
+  background-color:#6e6e6e;
   border-radius:25px;
   color:#ffffff;
-  background-color:#d0d2d3;
+  display:flex;
+  flex-wrap:wrap;
   font-weight:700;
+  height:33px;
+  justify-content:center;
+  min-width: 30%;
 }
 
-.btn--submit {
-  background-color:#6e6e6e
+.btn:disabled{
+  background-color: #d0d2d3
 } 
 
 .latest-score__container {
-  border: #d0d0d0 2px solid;
-  /*display:block;*/
-  height:27%;
-  width:100%;
   background-color:#ffffff;
-  padding: 10px;
+  border: #d0d0d0 2px solid;
   color: #6e6e6e;
+  height:27%;
+  padding: 10px;
+  width:100%;
 }
 
 .latest-score__container h3 {
   margin: 0;
+  width: 100%;
 }
 
 .latest-score__container article {
   display:inline-flex;
   flex-direction: column;
-  width:49%;
-  text-align: center;
   padding-top: 5px;
+  text-align: center;
+  width:49%;
 }
 
 .latest-score__article--ch1{
@@ -216,38 +241,38 @@ main {
 }
 
 .latest-score__container h4 {
-  margin:0;
   font-weight:100;
+  margin:0;
 }
 
 .latest-score__span--guess {
-  font-size: 4.5em;
-  width:100%;
-  display:inline-block;
   color:#dd1972;
+  display:inline-block;
+  font-size: 4.5em;
   font-weight: 700;
+  width:100%;
 }
 
 .btnEnabled{
-  display: flex;
-  flex-wrap: wrap;
-  min-width: 30%;
-  justify-content: center;
-  height: 33px;
+  background-color: #6e6e6e;
   border-radius: 25px;
   color: #ffffff;
-  background-color: #6e6e6e;
+  display: flex;
+  flex-wrap: wrap;
   font-weight: 700;
+  height: 33px;
+  justify-content: center;
+  min-width: 30%;
 }
 
 /********************** Aside *********************/
 
 aside {
-  width:50%;
   background-color:#D1D2D4;
-  padding:20px 30px;
   border-left:2px solid #6e6e6e;
   color:#6e6e6e;
+  padding:20px 30px;
+  width:50%;
 }
 
 .card__article--winner {
@@ -259,21 +284,20 @@ aside {
 .card__section {
   background-color:#ffffff;
   border:2px solid #6e6e6e;
-  padding:10px;
   margin-top:5px;
-  height:200px;
+  padding:10px;
 }
 
 .card__div--ch {
   display:flex;
+  font-weight:700;
   justify-content:space-around;
   padding:5px;
-  font-weight:700;
 }
 
 .card__div--ch p {
-  margin:0;
   font-weight:100;
+  margin:0;
 }
 
 .card__div--winner span {
@@ -293,13 +317,165 @@ aside {
 
 .card__div--bottom {
   display:flex;
-  justify-content: space-between;
   font-weight: 100;
+  justify-content: space-between;
   padding:5px;
 }
 
-.card__btn--delete {
-  border-radius: 50%;
+.card__btn--close {
   background-color: #6e6e6e;
+  border-radius: 50%;
   color:white;
 }
+
+/*#card__section--hidden {
+  display:none;
+}*/
+
+/* error messages*/
+
+.error-border {
+  border:1px solid #DD1972;
+}
+
+.range__div--error {
+  align-items: center;
+  color: #DD1972;
+  display: inline-flex;
+  font-size:.5em;
+  height:20px;
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-top: 1%;
+  margin:0;
+  width:45%;
+}
+
+#ch1__guess--error,
+#ch2__guess--error {
+  float:right;
+}
+
+#range__input--error{
+  margin-top: 30px;
+}
+
+.hidden {
+  display:none;
+}
+
+@media screen and (max-width: 875px) {
+  main {
+    width:100%;
+  }
+
+  aside {
+    width: 100%;
+  }
+
+  .top__header {
+    font-size: 4em;
+  }
+
+  .top__header--edition {
+    font-size: 1.3em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    height: 1200px;
+  }
+
+  .top__header {
+    font-size: 2.2em;
+  }
+
+  .top__header--edition {
+    font-size: .7em;
+  }
+
+  .range__div--parent {
+    display: block;
+  }
+
+  .range__container--set {
+    height: 20%;
+  }
+
+  .range__div--first,
+  .range__div--second {
+    width:100%;
+  }
+
+  .range__btn--update {
+    width: 100%;
+  }
+
+  .range__input {
+    width:100%;
+  }
+
+  .range__div--first {
+    margin-bottom: 20px;
+  }
+
+  #range__input--error {
+    margin-top: 15px;
+    width:100%;
+  }
+
+  .container__headers{
+    width:100%;
+  }
+
+  .player__container--ch {
+    height: 45%;
+    display: block;
+  }
+
+  .player__header--range {
+    font-size: .9em;
+  }
+
+  .player__form--ch {
+    display: block;
+  }
+
+  .player__input,
+  .player__input--guess {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+
+  .player__wrapper--btns {
+    display:block;
+    width:100%;
+  }
+  
+  .btn {
+    margin: 10px;
+    width:95%;
+  }
+
+  .latest-score__container {
+    height: 30%;
+    width:100%;
+  }
+
+  .latest-score__container article {
+    display: block;
+    width:100%;
+  }
+
+  .latest-score__article--ch1 {
+    border-bottom: 1px solid #6e6e6e
+    border-right:0;
+  }
+
+  .latest-score__container h3 {
+    width:100%;
+  }
+
+
+
