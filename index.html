@@ -42,11 +42,11 @@
       <h2 class="player__header--range">The Current Range is <span class="player__span--range"id="player__span--min">1</span> to <span class="player__span--range"id="player__span--max">100</span></h2>
       <h3 class="container__headers">Challenger 1</h3>
       <div class="player__div--ch1">
-      <form class="player__form--ch player__form--ch1" id="player__form">
+      <form class="player__form--ch player__form--ch1 player__form" id="player__form">
         <div class="player__div--name">
           <label class="player__label player__label--name" for="player__name--ch1">Name
           </label>
-          <input class="player__input" id="player__name--ch1"type="text" pattern="[a-zA-Z0-9]+">
+          <input class="player__input" id="player__name--ch1" type="text" pattern="[a-zA-Z0-9]+">
         </div>
         <div class="player__div--guess">
           <label class="player__label" for="player__guess--ch1">Guess</label>
@@ -66,7 +66,7 @@
         </div>
         <div class="player__div--ch2">
           <h3 class="container__headers">Challenger 2 </h3>
-          <form class="player__form--ch2 player__form--ch">
+          <form class="player__form--ch2 player__form--ch player__form">
             <div class="player__div--name">
               <label class="player__label player__label--name"for="player__name--ch2">Name
               </label>
@@ -89,9 +89,9 @@
         </div>
       </div>
         <div class="player__wrapper--btns">
-          <input type="button"class="btn"value="SUBMIT GAME"id="player__btn--submit">
-          <input type="button"class="btn"value="RESET GAME"id="player__btn--reset">
-          <input type="button"class="btn"value="CLEAR GAME"id="player__btn--clear">
+          <input type="button"class="btn"value="SUBMIT GUESS"id="player__btn--submit">
+          <input type="button" class="btn" value="RESET GAME" id="player__btn--reset" disabled>
+          <input type="button" class="btn" value="CLEAR GAME" id="player__btn--clear" disabled>
         </div>
       </section>
     <section class="latest-score__container">
@@ -100,20 +100,20 @@
       <article class="latest-score__article--ch1">
         <span class="latest-score__span--name1" id="latest-score__span--ch1">Challenger 1 Name</span>
         <h4>current guess</h4>
-        <span class="latest-score__span--guess" id="latest-score__guess--ch1">1</span>
-        <span class="latest-score__span--low-high" id="latest-score__output--left">that's too low</span>
+        <span class="latest-score__span--guess" id="latest-score__guess--ch1">!?</span>
+        <span class="latest-score__span--low-high" id="latest-score__output--left">take a guess!</span>
       </article>
       <article class="latest-score__article--ch2">
         <span class="latest-score__span--name1" id="latest-score__span--ch2">Challenger 2 Name</span>
         <h4>current guess</h4>
-        <span class="latest-score__span--guess" id="latest-score__guess--ch2">99</span> 
-        <span class="latest-score__span--low-high" id="latest-score__output--right">that's too high</span>
+        <span class="latest-score__span--guess" id="latest-score__guess--ch2">!?</span> 
+        <span class="latest-score__span--low-high" id="latest-score__output--right">take a guess!</span>
       </article>
     </div>
   </section>
   </main>
-  <aside class="card__container">
-  <section class="card__section">
+  <aside class="card__container" id="card__section">
+  <section class="card__section" id="card__section--hidden">
     <div class="card__div--ch">
       <span class="card__span--ch1">CHALLENGER 1 NAME</span>
       <p>vs</p>
